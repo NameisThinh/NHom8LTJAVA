@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<title>Layout Product</title>
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+
+</head>
+
+<body>
+	<nav class="navbar bg-dark" data-bs-theme="dark">
+		<div>
+			<a class="navbar-brand" th:href="@{/home}">Home</a> <a
+				class="navbar-brand" th:href="@{/products/create}">Add Product</a>
+		</div>
+	</nav>
+	<div layout:fragment="content" class="container body-content"></div>
+	<div class="card-footer">
+		<hr />
+		Lập trình ứng dụng Java -Nhóm 8 -@2023
+	</div>
+</body>
+</html>
